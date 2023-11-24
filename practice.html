@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>객(?)식구 계산기</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <div class="input">
+          <table border="2" width="200px" wehight="200px">
+            <tr>
+              <td colspan="4">
+                <p type="display" class="display" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <button data-type="ac" class="ac numBtn">AC</button>
+              </td>
+              <td>
+                <button data-type="operator" class="operator numBtn">/</button>
+              </td>
+            </tr>
+            <tr>
+              <td><button class="numBtn">7</button></td>
+              <td><button class="numBtn">8</button></td>
+              <td><button class="numBtn">9</button></td>
+              <td>
+                <button data-type="operator" class="operator numBtn">*</button>
+              </td>
+            </tr>
+            <tr>
+              <td><button class="numBtn">4</button></td>
+              <td><button class="numBtn">5</button></td>
+              <td><button class="numBtn">6</button></td>
+              <td>
+                <button data-type="operator" class="operator numBtn">-</button>
+              </td>
+            </tr>
+            <tr>
+              <td><button class="numBtn">1</button></td>
+              <td><button class="numBtn">2</button></td>
+              <td><button class="numBtn">3</button></td>
+              <td>
+                <button data-type="operator" class="operator numBtn">+</button>
+              </td>
+            </tr>
+            <tr>
+              <td><button colspan="2" class="numBtn">0</button></td>
+              <td>
+                <button colspan="2" data-type="operator" class="result numBtn">
+                  =
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./practice.js"></script>
+  </body>
+</html>
