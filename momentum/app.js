@@ -1,8 +1,3 @@
-const title = document.getElementById("title");
+const title = document.querySelector(".hello h1");
 
-console.dir(title);
-
-title.innerText = "Got you!";
-
-console.log(title.id);
-console.log(title.className);
+title.innerText = "hello!";
