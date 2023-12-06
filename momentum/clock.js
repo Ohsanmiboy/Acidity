@@ -1,3 +1,7 @@
-const clock = document.querySelector("#clock");
+const clock = document.querySelector("h2#clock");
 
-clock.innerText = "lalalala";
+function sayHello() {
+  console.log("hello!");
+}
+
+setInterval(sayHello, 5000);
