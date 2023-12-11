@@ -12,6 +12,9 @@ function saveToDos() {
 function deleteToDo(event) {
   const li = event.target.parentElement;
   li.remove();
+  console.log(typeof li.id);
+  toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+  save;
 }
 function paintToDo(newTodo) {
   const li = document.createElement("li");
@@ -50,7 +53,3 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
-
-function sexyFilter(item) {}
-
-[1, 2, 3, 4].filter(sexyFilter);
