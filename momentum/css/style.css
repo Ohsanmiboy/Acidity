@@ -10,13 +10,65 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+}
 body {
   margin: 0;
   height: 100%;
 }
-
+div {
+}
 #bg {
   height: 100%;
   background-repeat: no-repeat;
+  position: relative;
   background-size: cover;
+}
+
+#greeting {
+  position: absolute;
+  text-align: center;
+  color: beige;
+  left: 45%;
+  top: 45%;
+  font-weight: 900;
+}
+#quote {
+  display: block;
+  position: absolute;
+  color: beige;
+  top: 90%;
+  text-align: center;
+}
+h2 div span {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  color: beige;
+}
+
+#todo-form {
+  position: absolute;
+  color: beige;
+  left: 45%;
+  top: 50%;
+}
+#todo-list {
+  position: absolute;
+  text-align: center;
+  color: beige;
+  left: 45%;
+  top: 51%;
+}
+#weather {
+  color: beige;
+  display: inline-block;
+  float: right;
+}
+#clock {
+  color: beige;
+  display: inline-block;
 }
