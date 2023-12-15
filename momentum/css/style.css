@@ -4,68 +4,77 @@ html {
 
 .hidden {
   display: none;
+  margin: 0;
 }
 
 h1 {
   margin: 0;
 }
 
-h2 {
-  margin: 0;
+h4 {
+  margin-block-start: 0.4rem;
+  margin-block-end: 0.4rem;
 }
+
 body {
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   height: 100%;
+}
+form {
+  margin: 0;
 }
 
 #bg {
-  height: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: cover;
+  padding: 15px;
+  height: calc(100% - 30px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+/* 지금 화면 가보면 다시 3x3으로 되어 있음 */
+#clock {
+  margin: 0;
+  color: beige;
+  display: inline-block;
+}
+#weather {
+  display: flex;
+  flex-direction: column;
+  color: beige;
+  justify-self: end;
+  text-align: right;
 }
 
 #greeting {
-  position: relative;
+  display: inline-block;
   color: beige;
-  top: 50%;
   font-weight: 900;
   text-align: center;
 }
-#quote {
+#login-form {
   display: block;
-  position: relative;
-  color: beige;
-  top: 80%;
+  position: inherit;
   text-align: center;
+  align-items: start;
 }
-h2 div span {
-  text-align: center;
-}
-
-div form {
-  color: beige;
-  text-align: center;
-}
-
 #todo-form {
-  position: relative;
+  position: inherit;
   color: beige;
-  top: 50%;
   text-align: center;
 }
 #todo-list {
   position: relative;
+  list-style-type: none;
+  color: beige;
+  align-self: end;
   text-align: center;
-  color: beige;
-  top: 51%;
 }
-#weather {
+#quote {
+  position: relative;
   color: beige;
-  display: inline-block;
-  float: right;
-}
-#clock {
-  color: beige;
-  display: inline-block;
+  text-align: center;
+  align-items: end;
+  grid-column: 1/4;
 }

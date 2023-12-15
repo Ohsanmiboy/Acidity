@@ -8,42 +8,52 @@
   </head>
   <body>
     <div id="bg">
-      <form id="login-form" class="hidden">
-        <input
-          required
-          maxlength="15"
-          type="text"
-          placeholder="What is your name?"
-        />
-        <button>Log In</button>
-      </form>
-      <h1 id="greeting" class="hidden"></h1>
-
-      <form id="todo-form">
-        <input
-          type="text"
-          placeholder="write a To do and Press Enter"
-          required
-        />
-      </form>
-      <ul id="todo-list"></ul>
-
       <h2 id="clock">00:00:00</h2>
+      <div class="blank"></div>
+      <div id="weather">
+        <img id="icon" src="" style="max-width: 100%; height: auto" />
+        <h4 id="weather-type"></h4>
+        <span id="weather-location"></span>
+      </div>
+      <div class="blank"></div>
+      <div>
+        <form id="login-form" class="hidden">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+          <button>Log In</button>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form">
+          <input
+            type="text"
+            placeholder="write a To do and Press Enter"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <div class="blank"></div>
+      <div class="blank"></div>
       <div id="quote">
         <span></span>
         <span></span>
       </div>
-      <div id="weather">
-        <span></span>
-        <span></span>
-      </div>
-
-      <script src="./js/greeting.js"></script>
-      <script src="./js/clock.js"></script>
-      <script src="./js/quotes.js"></script>
-      <script src="./js/background.js"></script>
-      <script src="./js/todo.js"></script>
-      <script src="./js/weather.js"></script>
+      <div class="blank"></div>
     </div>
+    <script src="./js/greeting.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
   </body>
 </html>
+<!-- 
+1. 그리드 라인 지정 3x3
+2. 그리드 안으로 배치
+3. 그리드 안 위치 조정 /이제 이거할게염 / 오키
+-->

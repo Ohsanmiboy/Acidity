@@ -2,6 +2,6 @@ const images = ["bbbbback1.jpg", "bbbbback2.jpg", "bbbbback3.jpg"];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = document.querySelector("#bg");
+const bgImage = document.querySelector("body");
 
 bgImage.style.backgroundImage = `url(img/${chosenImage})`;
