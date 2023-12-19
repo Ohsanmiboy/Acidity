@@ -33,7 +33,7 @@ form {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
-/* 지금 화면 가보면 다시 3x3으로 되어 있음 */
+
 #clock {
   margin: 0;
   color: beige;
@@ -54,10 +54,9 @@ form {
   text-align: center;
 }
 #login-form {
-  display: block;
   position: inherit;
+  margin: 0 auto;
   text-align: center;
-  align-items: start;
 }
 #todo-form {
   position: inherit;
@@ -77,4 +76,10 @@ form {
   text-align: center;
   align-items: end;
   grid-column: 1/4;
+}
+#icon {
+  display: inline-block;
+}
+#weather-type {
+  display: inline-block;
 }
