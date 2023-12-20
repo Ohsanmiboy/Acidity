@@ -29,10 +29,10 @@ if (savedUsername == null) {
 }
 
 logoutKey.addEventListener("submit", (event) => {
-  if (saveUsername === null) {
-    logoutKey.cassList.remove(HEDDEN_CLASSNAME);
+  if (savedUsername === null) {
+    logoutKey.cassList.remove(HIDDEN_CLASSNAME);
     localStorage.removeItem(USERNAME_KEY, loginInput.value);
   } else {
-    logoutKey.cassList.add(HEDDEN_CLASSNAME);
+    logoutKey.cassList.add(HIDDEN_CLASSNAME);
   }
 });

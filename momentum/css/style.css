@@ -57,11 +57,13 @@ form {
   position: inherit;
   margin: 0 auto;
   text-align: center;
+  place-items: center;
 }
 #todo-form {
   position: inherit;
   color: beige;
   text-align: center;
+  place-items: center;
 }
 #todo-list {
   position: relative;
